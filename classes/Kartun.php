@@ -29,8 +29,8 @@ class Kartun extends DB
 
     function addData($data, $file)
     {
-        $tmp_file = $file['kartun_fotoo']['tmp_name'];
-        $kartun_fotoo = $file['kartun_foto']['name'];
+        $tmp_file = $file['kartun_foto']['tmp_name'];
+        $kartun_foto = $file['kartun_foto']['name'];
 
         $dir = "assets/images/$kartun_foto";
         move_uploaded_file($tmp_file, $dir);
