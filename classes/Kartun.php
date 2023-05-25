@@ -59,7 +59,7 @@ class Kartun extends DB
         $produksi_id = $data['produksi_id'];
         $genre_id = $data['genre_id'];
 
-        $query = "UPDATE kartun SET nama = '$nama', kartun_foto = '$kartun_foto', $produksi_id = '$produksi_id', $genre_id = '$genre_id' WHERE id = '$id'";
+        $query = "UPDATE kartun SET nama = '$nama', kartun_foto = '$kartun_foto', produksi_id = '$produksi_id', genre_id = '$genre_id' WHERE id = '$id'";
         return $this->executeAffected($query);
     }
 
